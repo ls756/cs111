@@ -1,0 +1,40 @@
+Inputs:
+
+1.the color of the card on the table //red;blue;green;yellow
+2.the number of the card on the table // 0-9;-1
+3.how many cards I have
+4.color and number of my cards //red,2
+5.color and kind of my cards //green,reverse
+6.wild cards I have //draw4; original wild
+
+Basic Strategies:
+
+In my round, 
+I should play a card with the same color or number as the card on the table.
+If I do not have the same color or number as the card on the table, I can play a wild card and choose a color. 
+If I do not have a suited card to play, I should draw one card from the deck and check if it can be played. If the card I add is a wild card or it has the same color or number that the card on the table has, play it and choose a color if it needs. If this card is still cannot be played, remain it and go next player.
+If I only have 2 cards, and I can play one card, I need to press UNO before I play the card.
+
+Optimizing Strategies:
+
+Additonal Inputs:
+1.the most color of cards I have
+2.the most number of cards I have
+3.the next card from the deck
+4.how many cards does every player has
+5.color and number of cards that other players have
+
+In my round, 
+If I have special cards of the color of the card on the table, play one of them. If I have reverse card and other special cards, check how many cards does my last player and my next player has. If my last player has more cards than my next player, play reverse card. Or play other cards.
+
+If I do not have special cards of the color of the card on the table,
+If the color of this card is the most colors I have, play this color of cards and choose the most numbers of cards I have. If the number of this color of cards is balanced with all of my cards, freely choose one card of this color. For example, the card on the table is red, and red is the color I have most. I should play red cards. If I have number 2,3,4 of red cards, I need to check if I still have these three numbers in other colors of in the same color. If so, choose that number of red card.
+
+If I do not have special cards of the color of the card on the table,
+If the color of this card is not the most colors I have or even I do not have this color of this card, play the same number of this card. Also, choose the most colors of cards I have. If the color of this number of cards is balanced with all of my cards, freely choose one card of this number. For example, the card on the table is green 5 and I have red and yellow 5. I need to compare the amount of red cards and yellow cards I have, then choose the greater one. 
+
+If I do not have the same color or number of the card on the table, play wild cards and choose a color which I have most. If I even do not have wild cards, then add a card from the deck. If that card is a wild card or it has the same color or number that the card on the table has, add that card and play it and choose a color that I have most if it needs. If that card cannot be played, remain it and go next player.
+
+If I only have 2 cards, and I can play one card, I need to press UNO before I play the card.
+
+If any player only has 2 cards, check the card he/she has. Do not play the card with the same color or number that he/she has. 

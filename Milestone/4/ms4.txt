@@ -1,0 +1,53 @@
+method play:
+
+1. int a = used.size();
+   int b = hand.size();
+
+2. j<used.size()
+   cardRed==maxNum
+   cardGreen==maxNum
+   cardBlue==maxNum
+   cardYellow==maxNum
+   cardZero==maxNumb ~ cardNine==maxNumb
+   hand.get(i).getRank()!=Rank.NUMBER
+   hand.get(i).getColor()==colorOfUpCard
+   hand.get(i).getRank()==Rank.REVERSE
+   arr[0]<arr[2]£ü£üarrS[0]>arrS[2]
+
+3. BestCase:f(n)=a+1+a+1+1=2a+3;
+   //it counts all colors of usedcards, and the maxColor is red
+     it counts all numbers of usedcards, and the maxNumber is 0
+     the 1st card in hand is a special card and it has the same rank of the upcard
+
+   WorstCase:f(n)=a+4+a+10+2b=2a+2b+14; 
+   //it counts all colors of usedcards, and the maxColor is yellow
+     it counts all numbers of usedcards, and the maxNumber is 9
+     only the last card can be played or there's no cards can be played
+
+Big O = a+b
+
+method callColor
+1. int n = hand.size();
+2. i<hand.size()
+3. BestCase:f(n)=1
+   //the 1st card in hand is red
+   WorstCase:f(n)=4n
+   //all cards do not have colors or only the last card has a color
+
+Big O = n
+
+method max
+1. int n = 4
+2. compare a,b,c,d
+3. BestCase:f(n)=n-1 //a is max
+   WorstCase:f(n)=n(n-1) //d is max
+
+Big O = n2
+
+method getMax
+1. int n = 10
+2. compare a,b,c,d,e,f,g,h,i,j
+3. BestCase:f(n)=n-1 //a is max
+   WorstCase:f(n)=n(n-1) //j is max
+
+Big O = n2
